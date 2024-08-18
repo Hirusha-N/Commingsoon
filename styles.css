@@ -13,60 +13,64 @@ body {
 
 .header {
     position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
+    top: 10px;
+    left: 10px;
 }
 
 .header h2 {
     margin: 0;
-    font-family: 'Pacifico', cursive; /* Unique font */
-    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
     color: #4a90e2;
 }
 
 .container {
     background: white;
     border-radius: 12px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 90%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 h1 {
     margin: 0;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: #333;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #666;
     margin: 10px 0;
 }
 
 .countdown {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .countdown-item {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #333;
+    margin: 10px;
+    flex: 1 1 20%;
+    max-width: 120px;
 }
 
 .countdown-item span {
     display: block;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #4a90e2; /* Blue accent color */
+    color: #4a90e2;
 }
 
 .countdown-item p {
     margin: 5px 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #888;
 }
 
@@ -86,4 +90,28 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .countdown-item {
+        font-size: 0.9rem;
+        max-width: 100px;
+    }
+
+    .countdown-item span {
+        font-size: 2rem;
+    }
 }
