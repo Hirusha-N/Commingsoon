@@ -1,5 +1,5 @@
 // Set the end date to August 18, 2024, 23:59:59
-const endDate = new Date('2024-08-18T23:59:59');
+const endDate = new Date('2024-09-18T23:59:59');
 const endTime = endDate.getTime();
 
 function updateCountdown() {
